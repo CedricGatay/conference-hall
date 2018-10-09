@@ -11,3 +11,5 @@ import './components/small.css'
 import './components/textarea.css'
 import './components/titles.css'
 import './components/tabs.css'
+
+import './images/tnt19.svg'

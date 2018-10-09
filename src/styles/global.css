@@ -24,6 +24,13 @@ body {
   overflow: hidden;
 }
 
+footer{
+  font-size: 0.75em;
+  padding: 0.5em;
+  background-color: transparent;
+  text-align: center;
+}
+
 @media print{
   @page {
     size: A4;
