@@ -13,15 +13,16 @@ const TalkForm = formProps => (
     <Field name="title" label="Title" type="text" component={input} validate={required} />
     <Field name="abstract" label="Abstract" component={markdownInput} validate={required} />
     <RadioGroup name="level" label="Level" inline>
-      <Field name="level" value="beginner" label="Beginner" type="radio" component={radio} />
+      <Field name="level" value="beginner" label="Beginner" type="radio" component={radio} validate={required} />
       <Field
         name="level"
         value="intermediate"
         label="Intermediate"
         type="radio"
         component={radio}
+        validate={required}
       />
-      <Field name="level" value="advanced" label="Advanced" type="radio" component={radio} />
+      <Field name="level" value="advanced" label="Advanced" type="radio" component={radio} validate={required} />
     </RadioGroup>
     <Field name="references" label="References" component={markdownInput} />
     <SubmitButton {...formProps}>
