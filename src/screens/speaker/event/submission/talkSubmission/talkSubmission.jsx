@@ -10,6 +10,7 @@ import {
 import isEmpty from 'lodash/isEmpty'
 
 import './talkSubmission.css'
+import { required } from 'components/form/validators'
 
 const TalkSubmission = ({
   talk, event, update, unsubmitTalk, ...formProps
@@ -36,6 +37,7 @@ const TalkSubmission = ({
               label={c.name}
               type="radio"
               component={radio}
+              validate={required}
             />
           ))}
         </RadioGroup>
@@ -50,6 +52,7 @@ const TalkSubmission = ({
               label={f.name}
               type="radio"
               component={radio}
+              validate={required}
             />
           ))}
         </RadioGroup>
